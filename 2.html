@@ -5,34 +5,61 @@
 <title>WEB1/CSS/</title>
 <meta charset="utf-8">
 <style>
-a {color: black; text-decoration: none;}
-.saw{color: blue}
-#active{color: red}
-h1 {font-size: 45px;
-    text-align: center;
-     border-bottom: 2px solid gray
-           }
+body{
+  margin: 0;
+}
+h1{
+  font-size: 45px;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  padding: 20px;
+margin:0;}
+div{
+  border-right: 2px solid gray;
+  width: 180px;
+  margin: 0;
+  padding: 30px;
+}
+ol{
+  margin: 0;
+  padding: 50px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
 </style>
 </head>
 <body>
-  <ol>
-    <h1><a href="index.html" title="index file">WEB</a></h1>
-      <li><a href="1.html" class="saw"title="html5 specification">HTML</a></li>
-      <li><a href="2.html" class="saw" id="active" title="CSS specification">CSS</a></li>
-      <li><a href="3.html" title="JavaScript specification">JavaScript</a></li>
-  </ol>
 
-<ul>
-    <li>jangwonkwon</li>
-    <li>kimchulsoo</li>
-    <li>hongkildong</li>
-</ul>
-<h2>CSS란 무엇인가?</h2>
-Cascading Style Sheets (CSS) is a style sheet language used for describing
-the presentation of a document written in a markup language like HTML.
-CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
 
-<img src="women.jpg" width="30%">
+
+        <h1><a href="index.html" title="index file">WEB</a></h1>
+        <div id="grid">
+          <div>
+        <ol>
+          <li><a href="1.html" class="saw"title="html5 specification">HTML</a></li>
+          <li><a href="2.html" class="saw" id="active" title="CSS specification">CSS</a></li>
+          <li><a href="3.html" title="JavaScript specification">JavaScript</a></li>
+       </ol>
+
+        <ul>
+            <li>jangwonkwon</li>
+            <li>kimchulsoo</li>
+            <li>hongkildong</li>
+        </ul>
+      </div>
+      <div>
+
+        <h2>CSS란 무엇인가?</h2>
+      Cascading Style Sheets (CSS) is a style sheet language used for describing
+      the presentation of a document written in a markup language like HTML.
+      CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
+
+      <img src="women.jpg" width="30%">
+    </div>
+  </div>
+
 <p>
   <div id="disqus_thread"></div>
 <script>
